@@ -1,0 +1,16 @@
+mysql -u root -p
+create database devices
+CREATE TABLE device(
+id_device int not null auto_increment,
+ip varchar(30) not null,
+port varchar(10) not null,
+community varchar(30) not null,
+nick varchar(30),
+opSystem varchar(30) not null,
+contact varchar(30),
+location varchar(30),
+PRIMARY KEY(id_device));
+
+mysql> CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20),
+       species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+describe device;
